@@ -3,10 +3,10 @@
 export default function ArticleCard({article, estFavori, onBasculer}) {
   return(
 <div className="carte">
-  <h2 >{article.title}</h2>
+  <h3 >{article.title}</h3>
    <p>{article.body.slice(0,40)}...</p>
    <button onClick={() => onBasculer(article.id)}>
-     {estFavori ? "Retirer des favoris" : "Ajouter aux favoris"}
+     {estFavori ? "Retirer" : "Favori"}
    </button>
    </div>
   )
