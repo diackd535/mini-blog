@@ -1,5 +1,8 @@
 // TODO(P301) : Étape 3 (chapitre 3).
 // Affiche une liste de cartes d'articles.
+
+import { useState } from "react";
+
 // Props attendues : articles (tableau), favoris (tableau d'identifiants), onBasculerFavori (fonction).
 export default function ListeArticles() {
   return <p className="discret">ListeArticles : à construire (TODO P301).</p>;
