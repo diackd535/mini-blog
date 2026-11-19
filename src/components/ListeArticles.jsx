@@ -4,14 +4,14 @@ import ArticleCard from "./ArticleCard";
 
 
 // Props attendues : articles (tableau), favoris (tableau d'identifiants), onBasculerFavori (fonction).
-export default function ListeArticles({article, favori, onBasculerFavori}) {
+export default function ListeArticles({articles, favoris, onBasculerFavori}) {
 return(
   <div>
-    {article.map((p) => (
+    {articles.map((p) => (
       <ArticleCard
     key={p.id}
-  article={p.title}
-estFavori={favori.includes(p.id)}
+  article={p}
+estFavori={favoris.includes(p.id)}
 onBasculer={onBasculerFavori}
 />))}
 
